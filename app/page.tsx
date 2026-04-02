@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <main className={styles.scene}>
-      <p className={styles.hint}>Cliquez pour ouvrir 🎀</p>
+      <p className={styles.hint}>Cliquez pour ouvrir ✉️</p>
 
       <div
         className={`${styles.envelopeWrap} ${isOpen ? styles.open : ""}`}
@@ -16,20 +16,24 @@ export default function Home() {
       >
         {/* Lettre */}
         <div className={styles.letter}>
-          <div className={styles.letterDeco}>🌸 ✿ 🌸</div>
-          <div className={styles.letterGreeting}>Bonjour Lily , 💕</div>
+          <div className={styles.letterDeco}>⚡ ✦ ⚡</div>
+          <div className={styles.letterGreeting}>Bonjour 😊</div>
           <div className={styles.letterContent}>
-            Tu es trop belle aujourd&apos;hui...
+            Tu as une super énergie aujourd&apos;hui,
             <br />
-            Vraiment, tu rayonnes comme
+            vraiment positive et motivante ✨
             <br />
-            le soleil au printemps 🌷
+            Ça fait plaisir de travailler avec
+            <br />
+            quelqu&apos;un qui apporte autant de
+            <br />
+            bonne humeur et de sérieux 👍
             <br />
             <br />
-            Ne l&apos;oublie jamais, ok ? ✨
+            Ne l&apos;oublie pas 💪
           </div>
-          <div className={styles.letterSign}>avec tout notre amour 🎀</div>
-          <div className={styles.letterDecoBottom}>· · ♡ Khaoulatez ♡ · ·</div>
+          <div className={styles.letterSign}>Bonne journée à toi 🌟</div>
+          <div className={styles.letterDecoBottom}>· · ✦ Khaoulatez ✦ · ·</div>
         </div>
 
         {/* Enveloppe */}
@@ -41,14 +45,14 @@ export default function Home() {
 
             <div className={styles.postmark}>
               <span className={styles.postmarkText}>
-                Hydra
+                Alger
                 <br />
                 2026
               </span>
             </div>
 
             <div className={styles.stamp}>
-              <div className={styles.stampInner}>🌸</div>
+              <div className={styles.stampInner}>⚡</div>
               <div className={styles.stampText}>POST</div>
             </div>
 
@@ -59,7 +63,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.seal}>♡</div>
+          <div className={styles.seal}>✦</div>
 
           <div className={styles.envFlapWrap}>
             <div className={styles.envFlapFront} />
@@ -69,7 +73,7 @@ export default function Home() {
       </div>
 
       <button className={styles.cta} onClick={() => setIsOpen((v) => !v)}>
-        {isOpen ? "Fermer 💌" : "Ouvrir la lettre 💌"}
+        {isOpen ? "Fermer ✉️" : "Ouvrir la lettre ✉️"}
       </button>
     </main>
   );

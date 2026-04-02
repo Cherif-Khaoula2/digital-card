@@ -1,5 +1,3 @@
-/* ── page.module.css — Girly Pink Envelope ── */
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:ital,wght@0,400;1,400&display=swap');
 
 .scene {
@@ -9,20 +7,19 @@
   justify-content: center;
   min-height: 100vh;
   padding: 2rem;
-  background: linear-gradient(135deg, #fff0f5 0%, #ffe4f0 50%, #ffd6e8 100%);
+  background: linear-gradient(135deg, #f0f4ff 0%, #e4ebff 50%, #d6e0ff 100%);
   font-family: 'Lato', Georgia, serif;
 }
 
 .hint {
   font-size: 13px;
-  color: #d48aaa;
+  color: #6a85c2;
   margin-bottom: 2rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
 }
 
-/* ── Wrapper ── */
 .envelopeWrap {
   position: relative;
   width: 320px;
@@ -32,37 +29,34 @@
   overflow: visible;
 }
 
-/* ── Lettre ── */
 .letter {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 30px;
   width: 284px;
-  background: linear-gradient(160deg, #fff5f9 0%, #fff0f5 100%);
-  border: 1px solid #f5b8d0;
+  background: linear-gradient(160deg, #f5f8ff 0%, #eef2ff 100%);
+  border: 1px solid #a8b8f5;
   border-radius: 8px;
   padding: 18px 22px 14px;
   z-index: 10;
   opacity: 0;
   box-shadow:
-    0 4px 24px rgba(230, 100, 150, 0.15),
-    inset 0 0 0 3px rgba(255, 182, 213, 0.3);
+    0 4px 24px rgba(80, 100, 220, 0.12),
+    inset 0 0 0 3px rgba(150, 180, 255, 0.2);
   transition:
     bottom 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.45s,
     opacity 0.4s ease 0.45s;
 }
 
-/* Petits points déco en fond */
 .letter::before {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: 8px;
-  background-image:
-    radial-gradient(circle, #f9c5d9 1px, transparent 1px);
+  background-image: radial-gradient(circle, #b8c8f9 1px, transparent 1px);
   background-size: 18px 18px;
-  opacity: 0.25;
+  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -81,14 +75,14 @@
 .letterGreeting {
   font-family: 'Dancing Script', cursive;
   font-size: 17px;
-  color: #c2547a;
+  color: #3a5abf;
   margin-bottom: 8px;
   letter-spacing: 0.02em;
 }
 
 .letterContent {
   font-size: 12px;
-  color: #a0536e;
+  color: #4a5a8a;
   line-height: 1.8;
   font-family: 'Lato', sans-serif;
   font-style: italic;
@@ -97,7 +91,7 @@
 .letterSign {
   font-family: 'Dancing Script', cursive;
   font-size: 15px;
-  color: #d4728f;
+  color: #5a72c2;
   margin-top: 12px;
   text-align: right;
 }
@@ -105,12 +99,11 @@
 .letterDecoBottom {
   text-align: center;
   font-size: 13px;
-  color: #e8a0bc;
+  color: #8a9fd4;
   margin-top: 8px;
   letter-spacing: 3px;
 }
 
-/* ── Enveloppe ── */
 .envelope {
   position: absolute;
   bottom: 0;
@@ -124,51 +117,43 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #fce4ef;
-  border: 1px solid #f0a8c4;
+  background: #dce6ff;
+  border: 1px solid #a8b8f0;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .envSideLeft {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 160px solid #f7c5db;
+  bottom: 0; left: 0;
+  width: 0; height: 0;
+  border-left: 160px solid #c5d4f7;
   border-top: 105px solid transparent;
   border-bottom: 105px solid transparent;
 }
 
 .envSideRight {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-right: 160px solid #f7c5db;
+  bottom: 0; right: 0;
+  width: 0; height: 0;
+  border-right: 160px solid #c5d4f7;
   border-top: 105px solid transparent;
   border-bottom: 105px solid transparent;
 }
 
 .envBottomFlap {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
+  bottom: 0; left: 0;
+  width: 0; height: 0;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
-  border-bottom: 115px solid #f4b0cc;
+  border-bottom: 115px solid #b0c4ec;
   z-index: 3;
 }
 
-/* ── Rabat animé ── */
 .envFlapWrap {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 115px;
   transform-origin: top center;
@@ -183,30 +168,25 @@
 
 .envFlapFront {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
+  top: 0; left: 0;
+  width: 0; height: 0;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
-  border-top: 115px solid #f9cede;
+  border-top: 115px solid #adc0ee;
   backface-visibility: visible;
 }
 
 .envFlapBack {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
+  top: 0; left: 0;
+  width: 0; height: 0;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
-  border-top: 115px solid #fde0ec;
+  border-top: 115px solid #ccd8f8;
   transform: rotateX(180deg);
   backface-visibility: visible;
 }
 
-/* ── Sceau cœur ── */
 .seal {
   position: absolute;
   top: 70px;
@@ -214,7 +194,7 @@
   transform: translateX(-50%);
   width: 36px;
   height: 36px;
-  background: #e8527a;
+  background: #3a5abf;
   border-radius: 50%;
   z-index: 6;
   display: flex;
@@ -222,8 +202,8 @@
   justify-content: center;
   color: #fff;
   font-size: 16px;
-  border: 2px solid #d43d65;
-  box-shadow: 0 2px 8px rgba(220, 80, 120, 0.35);
+  border: 2px solid #2a44a0;
+  box-shadow: 0 2px 8px rgba(50, 80, 200, 0.35);
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
@@ -234,15 +214,12 @@
   transform: translateX(-50%) scale(0.4);
 }
 
-/* ── Timbre ── */
 .stamp {
   position: absolute;
-  top: 12px;
-  right: 14px;
-  width: 36px;
-  height: 44px;
-  background: #fff5f9;
-  border: 1px solid #f0a8c4;
+  top: 12px; right: 14px;
+  width: 36px; height: 44px;
+  background: #f5f8ff;
+  border: 1px solid #a8b8f0;
   z-index: 4;
   display: flex;
   flex-direction: column;
@@ -255,7 +232,7 @@
   content: "";
   position: absolute;
   inset: 3px;
-  border: 0.5px dashed #f0a8c4;
+  border: 0.5px dashed #a8b8f0;
 }
 
 .stampInner {
@@ -265,20 +242,17 @@
 
 .stampText {
   font-size: 7px;
-  color: #d48aaa;
+  color: #6a85c2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
 }
 
-/* ── Cachet postal ── */
 .postmark {
   position: absolute;
-  top: 12px;
-  right: 56px;
-  width: 48px;
-  height: 38px;
-  border: 1px solid #f0a8c4;
+  top: 12px; right: 56px;
+  width: 48px; height: 38px;
+  border: 1px solid #a8b8f0;
   border-radius: 50%;
   z-index: 4;
   display: flex;
@@ -288,23 +262,21 @@
 
 .postmarkText {
   font-size: 7px;
-  color: #d48aaa;
+  color: #6a85c2;
   text-align: center;
   line-height: 1.3;
   font-family: 'Lato', sans-serif;
 }
 
-/* ── Adresse ── */
 .address {
   position: absolute;
-  bottom: 22px;
-  left: 22px;
+  bottom: 22px; left: 22px;
   z-index: 4;
 }
 
 .addrLine {
   height: 1.5px;
-  background: #f0a8c4;
+  background: #a8b8f0;
   border-radius: 1px;
   margin-bottom: 5px;
   opacity: 0.7;
@@ -314,15 +286,14 @@
 .addrLine:nth-child(2) { width: 64px; }
 .addrLine:nth-child(3) { width: 72px; }
 
-/* ── Bouton ── */
 .cta {
   margin-top: 2.5rem;
   font-size: 13px;
-  color: #c2547a;
+  color: #3a5abf;
   cursor: pointer;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  border: 1px solid #f0a8c4;
+  border: 1px solid #a8b8f0;
   padding: 10px 24px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.6);
@@ -332,6 +303,6 @@
 }
 
 .cta:hover {
-  background: rgba(255, 200, 220, 0.4);
-  box-shadow: 0 4px 16px rgba(220, 100, 150, 0.2);
+  background: rgba(180, 200, 255, 0.4);
+  box-shadow: 0 4px 16px rgba(60, 100, 220, 0.2);
 }
