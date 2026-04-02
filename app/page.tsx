@@ -30,7 +30,6 @@ export default function Home() {
             bonne humeur et de sérieux 👍
             <br />
             <br />
-            Ne l&apos;oublie pas 💪
           </div>
           <div className={styles.letterSign}>Bonne journée à toi 🌟</div>
           <div className={styles.letterDecoBottom}>· · ✦ Khaoulatez ✦ · ·</div>
